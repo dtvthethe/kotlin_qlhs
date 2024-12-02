@@ -1,10 +1,12 @@
 package org.example
 
-interface Manager {
-    fun add(person: Person): Person;
-    fun edit(index: Int): Person;
-    fun delete(index: Int): Boolean;
-    fun findAll(): List<Person>;
-    fun find(name: String): List<Person>;
-    fun find(age: Int): List<Person>;
+interface Manager<T> {
+    fun getMaxId(): Int
+    fun findById(id: Int): T?
+    fun find(name: String): List<T>
+    fun find(age: Int): List<T>
+    fun findAll(): List<T>
+    fun add(param: T): T
+    fun edit(param: T): Boolean
+    fun delete(id: Int): Boolean
 }
