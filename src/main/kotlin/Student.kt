@@ -1,4 +1,4 @@
 package org.example
 
-class Student(name: String, age: Int) : Person(name, age) {
+class Student(id: Int, name: String, age: Int, val score: Double) : Person(id, name, age) {
 }

@@ -1,5 +1,6 @@
 package org.example
 
 fun main() {
-    println("awfwaf");
+    val studentManager = StudentManager()
+    studentManager.menu()
 }

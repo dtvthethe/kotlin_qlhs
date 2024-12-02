@@ -1,7 +1,7 @@
 package org.example
 
-open class Person(name: String, age: Int) {
+open class Person(val id: Int, val name: String, val age: Int) {
     fun show(): String {
-        return "name = $name, age = $age"
+        return "id = $id, name = $name, age = $age"
     }
 }
